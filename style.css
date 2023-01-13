@@ -182,12 +182,27 @@ footer i:hover {
 
   .description {
     font-size: 1.2rem;
-    padding-right: 7rem;
+    padding-right: 6rem;
   }
 
   footer {
     grid-area: footer;
     margin-left: auto;
+  }
+
+  footer i{
+    font-size: 1.1rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+  }
+
+  .fa-facebook-f {
+    width: 2.5rem;
+    padding-left: 0.8rem;
+  }
+
+  .fa-instagram {
+    font-size: 1.3rem;
   }
   
   .registerButton {
