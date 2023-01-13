@@ -45,6 +45,9 @@ html {
 
 body{
     background-color: var(--primary-bg-clr);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logo {
@@ -52,9 +55,7 @@ body{
 }
 
 .container {
-  background-image: url(images/bg-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+
   padding: 2.5rem;
   display: grid;
   gap: 4rem;
