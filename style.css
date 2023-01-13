@@ -151,7 +151,6 @@ footer i:hover {
     "header header"
     "illustration main"
     "none footer";
-    align-items: center;
     max-width: 1440px;
     margin: 2.5rem;
     padding: 0;
@@ -160,6 +159,7 @@ footer i:hover {
   main {
     height: min-content;
     text-align: left;
+    margin: 3rem 0;
   }
 
   header {
