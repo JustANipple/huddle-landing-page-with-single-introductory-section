@@ -9,9 +9,6 @@
   margin: 0;
 }
 body {
-  height: 100%;
-}
-body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -43,19 +40,25 @@ p, h1, h2, h3, h4, h5, h6 {
 
 html {
     font-size: 15px;
+    height: 100%;
 }
 
 body{
     background-color: var(--primary-bg-clr);
-    background-image: url(images/bg-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.logo {
+  width: 8rem;
 }
 
 .container {
-  margin: 2.5rem;
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2.5rem;
   display: grid;
   gap: 4rem;
+  place-content: center;
 }
 
 main {
@@ -128,17 +131,25 @@ footer i:hover {
 }
 
 @media screen and (min-width: 780px) {
-  body {
-    background-image: url(images/bg-desktop.svg);
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  
   .container {
-    grid-template-columns: 1.35fr 1fr;
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-columns: 1.2fr 1fr;
     grid-template-areas: 
     "header header"
     "illustration main"
     "none footer";
     align-items: center;
+    max-width: 1440px;
+    margin: 2.5rem;
+    padding: 0;
   }
 
   main {
@@ -150,15 +161,37 @@ footer i:hover {
     grid-area: header;
   }
 
+  .logo {
+    width: 14rem;
+    object-fit: contain;
+  }
+
   .illustration {
     grid-area: illustration;
-    grid: 1.35fr;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    padding-right: 8rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    padding-right: 7rem;
   }
 
   footer {
     grid-area: footer;
     margin-left: auto;
   }
-
   
+  .registerButton {
+    margin: 0;
+    text-align: center;
+  }
+
+  .registerButton a {
+    font-size: 1.2rem;
+    padding: 0.6rem 0;
+  }
 }
