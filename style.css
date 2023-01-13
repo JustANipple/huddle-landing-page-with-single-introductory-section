@@ -8,7 +8,7 @@
 * {
   margin: 0;
 }
-html, body {
+body {
   height: 100%;
 }
 body {
@@ -49,29 +49,35 @@ body{
     background-color: var(--primary-bg-clr);
     background-image: url(images/bg-mobile.svg);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .container {
-    display: ;
+  margin: 2.5rem;
+  display: grid;
+  gap: 4rem;
 }
 
 header img {
-    width: 10rem;
+    width: 8rem;
 }
 
 main {
     text-align: center;
     color: white;
+    display: grid;
+    gap: 1.5rem;
 }
 
 .title {
     font-family: var(--ff-heading);
     font-weight: var(--fw-heading-semi-bold);
+    font-size: 1.5rem;
 }
 
 .description {
     font-family: var(--ff-body);
-    font-size: 1.3rem;
+    font-size: 1.05rem;
 }
 
 .registerButton {
