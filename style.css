@@ -51,6 +51,10 @@ body{
     background-repeat: no-repeat;
 }
 
+.container {
+    display: ;
+}
+
 header img {
     width: 10rem;
 }
@@ -79,6 +83,7 @@ main {
     border-radius: 3rem;
     width: 15rem;
     height: 3rem;
+    box-shadow: 0px 5px 20px -10px black;
 }
 
 .registerButton a {
@@ -87,4 +92,24 @@ main {
     width: 100%;
     height: 100%;
     line-height: 3rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer i {
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-facebook-f {
+    width: 2.15rem;
+    padding-left: 0.7rem;
 }
