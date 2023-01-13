@@ -58,10 +58,6 @@ body{
   gap: 4rem;
 }
 
-header img {
-    width: 9rem;
-}
-
 main {
     text-align: center;
     color: white;
@@ -132,15 +128,37 @@ footer i:hover {
 }
 
 @media screen and (min-width: 780px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+  }
+
   .container {
-    display: grid;
+    grid-template-columns: 1.35fr 1fr;
     grid-template-areas: 
     "header header"
     "illustration main"
-    "footer footer";
+    "none footer";
+    align-items: center;
+  }
+
+  main {
+    height: min-content;
+    text-align: left;
   }
 
   header {
     grid-area: header;
   }
+
+  .illustration {
+    grid-area: illustration;
+    grid: 1.35fr;
+  }
+
+  footer {
+    grid-area: footer;
+    margin-left: auto;
+  }
+
+  
 }
